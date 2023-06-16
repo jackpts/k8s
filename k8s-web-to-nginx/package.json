@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.mjs",
-    "build_docker_image": "docker build . -t jackpts/k8s-web-hello",
-    "build_docker_image_v2": "docker build . -t jackpts/k8s-web-hello:2.0.0",
+    "build_docker_image": "docker build . -t jackpts/k8s-web-to-nginx",
+    "build_docker_image_v2": "docker build . -t jackpts/k8s-web-to-nginx:2.0.0",
     "docker_login": "docker login",
-    "docker_push": "docker push jackpts/k8s-web-hello",
-    "docker_push_v2": "docker push jackpts/k8s-web-hello:2.0.0"
+    "docker_push": "docker push jackpts/k8s-web-to-nginx",
+    "docker_push_v2": "docker push jackpts/k8s-web-to-nginx:2.0.0"
   },
   "keywords": [],
   "author": "",
