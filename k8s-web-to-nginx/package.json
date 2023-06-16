@@ -1,0 +1,21 @@
+{
+  "name": "k8s-web-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs",
+    "build_docker_image": "docker build . -t jackpts/k8s-web-hello",
+    "build_docker_image_v2": "docker build . -t jackpts/k8s-web-hello:2.0.0",
+    "docker_login": "docker login",
+    "docker_push": "docker push jackpts/k8s-web-hello",
+    "docker_push_v2": "docker push jackpts/k8s-web-hello:2.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1"
+  }
+}
