@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-web-hello
+  labels:
+    app: k8s-web-hello
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: k8s-web-hello
+      labels:
+        app: k8s-web-hello
+    spec:
+      containers:
+        - name: k8s-web-hello
+          image: jackpts/k8s-web-hello
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: k8s-web-hello
