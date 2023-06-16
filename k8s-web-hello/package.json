@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs",
+    "build_docker_image": "docker build . -t jackpts/k8s-web-hello",
+    "docker_login": "docker login",
+    "docker_push": "docker push jackpts/k8s-web-hello"
   },
   "keywords": [],
   "author": "",
