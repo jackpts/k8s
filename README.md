@@ -6,4 +6,7 @@
 
 ### Origin Bogdan's branch: https://github.com/bstashchuk/k8s
 
-#### K8s IDEA plugin: https://plugins.jetbrains.com/plugin/10485-kubernetes
+#### IDEA plugins: 
+- https://plugins.jetbrains.com/plugin/10485-kubernetes
+- https://plugins.jetbrains.com/plugin/7724-docker
+
